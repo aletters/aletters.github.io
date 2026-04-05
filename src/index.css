@@ -1,0 +1,64 @@
+:root {
+  --bg-primary: #faf5ff;
+  --bg-secondary: #f3e8ff;
+  --bg-card: #ffffff;
+  --text-primary: #4c1d95;
+  --text-secondary: #7c3aed;
+  --accent: #a855f7;
+  --accent-hover: #9333ea;
+  --border: #e9d5ff;
+  --success: #10b981;
+  --danger: #ef4444;
+  --shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+input, textarea {
+  font-family: inherit;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
